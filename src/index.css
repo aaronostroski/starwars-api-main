@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;400&display=swap');
+
+:root {
+  /* Themes variables */
+  --background-theme: #ffffff;
+  --font-theme: Roboto;
+  --gradient-theme: linear-gradient(64.17deg, #FF5A56 15.66%, #FF9A42 83.04%);
+
+  /* Page size variables */
+  --lg-container: 1024px;
+  --sm-container: 320px;
+
+  /* Header variables */
+  --default-color-title: #ffffff;
+  --default-color-input: #ffffff;
+  --default-color-placeholder: #ffffff;
+  --h1-font-color: linear-gradient(64.17deg, #FF5A56 15.66%, #FF9A42 83.04%); 
+  --h1-font-title: 'Ubuntu'; 
+  --h1-size-title: 42px;
+  --h1-line-height-title: 48px;
+  
+  /* Section Titles variable */
+  --font-title-section: 'Ubuntu'; 
+  --size-title-section: 22px;
+  --line-height-title-section: 30px;
+  --color-title-section: #666666;
+
+  /* Cards-movies variables */
+  --shadow-card-movie: rgba(0, 0, 0, 0.15); 
+  --background-card-movie: linear-gradient(263.56deg, rgba(12, 161, 223, 0.55) 0%, rgba(255, 132, 8, 0.55) 99.62%);
+  --separator-card-movie: linear-gradient(270deg, #EB5757 0.91%, #F2994A 98.98%);
+  --title-font-card-movie: 'Ubuntu';
+  --title-size-card-movie: 26px;
+  --title-line-height-card-movie: 30px;
+  --title-color-card-movie: #009CDA;
+
+  --description-color-card-movie: #777777;
+  --description-size-card-movie: 12px;
+  --description-line-height-card-movie: 17px;
+
+  /* Arrows */
+  --background-color-arrow: rgba(0, 0, 0, 0.5);
+
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+  height: 100vh;
+  width: 100vw;
+  background: var(--background-theme);
+  overflow-x: hidden;;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input:focus{
+    outline: none;
+}
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .slick-track {
+  width: 5100px !important;
+  height: 405px; 
+} */

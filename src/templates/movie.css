@@ -1,0 +1,245 @@
+header {
+    max-width: var(--lg-container);
+    margin: auto;
+    background-image: url('../assets/background-movie.png');
+    width: auto;
+    height: 226px;
+  }
+  
+#page-title h1 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+  
+#page-title .title-content {
+    text-align: center;
+    padding-top: 56px;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+a[href="#back"] {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #009CDA;
+}
+
+section#section-description {
+    max-width: var(--lg-container);
+    margin: 0px auto;
+    padding: 18px 15px 0px;
+}
+  
+.description {
+    margin: 27px auto 0;
+    height: auto;
+    max-width: 652px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #777777;
+}
+
+.description p {
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Ubuntu';
+    font-size: 26px;  ;
+    line-height: 30px;
+    color: #009CDA;
+    font-weight: 400;
+    margin:0;
+  }
+  #card-movies .title,
+  #characters .title,
+  #reviews .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  #card-movies .title > img,
+  #characters .title > img,
+  #reviews .title > img {
+    width: 22px;
+    margin-right: 5px;
+  }
+  h3 {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 22px;  ;
+    line-height: 30px;
+    background: #666666;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin:0;
+  }
+section#characters {
+    max-width: var(--lg-container);
+    margin: 45px auto;
+    padding: 0 15px;
+}
+  
+.cards-characters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+  
+  .character {
+    width: 226px;
+    height: 204px;
+    background: #F5F5F5;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding:16px 0 7px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .character-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .character-footer > img {
+    width: 10px;
+    height: 14px;
+    margin-bottom: 3px;
+  }
+  .city {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
+  }
+
+section#reviews {
+    max-width: var(--lg-container);
+    margin: 45px auto;
+    padding: 0 15px;
+}
+
+.review-box {
+    width: 438px;
+}
+
+.form-review {
+    width: 449px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "name email"
+    "comment comment"
+    "submit submit";
+    column-gap: 13px;
+    row-gap: 15px;
+}
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+input[name="name"],
+input[name="email"],
+textarea[name="comment"] {
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 58px;
+    color: #777777;        
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 20px 10px;
+}
+input[name="name"] {
+    grid-area: name;
+}
+input[name="email"] {
+    grid-area: email;
+}
+textarea[name="comment"] {
+    grid-area: comment;
+    height: 121px;
+}
+
+button[type="submit"] {
+    border: none;
+    grid-area: submit;
+    height: 56px;
+    background: linear-gradient(266.4deg, #EB5757 0%, #F2994A 100%);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff; 
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.comment {
+    margin: 35px 0 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #777777;
+}
+.comment > img {
+    align-self: flex-start;
+    margin-right: 9px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.rate {
+    text-align: left;
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    font-style: normal;
+}
+.rate .thumbs-down {
+    margin-right: 16px;
+    color: #FF5656
+}
+
+.rate .thumbs-up {
+    color: #00BE3B;
+
+}

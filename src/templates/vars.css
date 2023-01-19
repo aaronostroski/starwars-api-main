@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+  /* Themes variables */
+  --background-theme: #ffffff;
+  --font-theme: Roboto;
+  --gradient-theme: linear-gradient(64.17deg, #FF5A56 15.66%, #FF9A42 83.04%);
+
+  /* Page size variables */
+  --lg-container: 1024px;
+  --sm-container: 320px;
+
+  /* Titles variable */
+  --font-title: 'Ubuntu'; 
+  --size-title: 42px;
+  --line-height-title: 48px;
+  
+  /* Cards-movies variables */
+  --background-card-movie: linear-gradient(263.56deg, rgba(12, 161, 223, 0.55) 0%, rgba(255, 132, 8, 0.55) 99.62%);
+  --separator-card-movie: linear-gradient(270deg, #EB5757 0.91%, #F2994A 98.98%);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+  height: 100vh;
+  width: 100vw;
+  background: var(--background-theme);
+  overflow-x: hidden;;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input:focus{
+    outline: none;
+}

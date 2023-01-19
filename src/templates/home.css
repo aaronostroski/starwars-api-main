@@ -1,0 +1,194 @@
+header {
+  max-width: var(--lg-container);
+  margin: auto;
+  background-image: url('../assets/background-title-home.png');
+  width: auto;
+  height: 226px;
+}
+
+#page-title h1 {
+  font-family: var(--font-title);
+  font-size: var(--size-title);
+  line-height: var(--line-height-title);
+  background: var(--gradient-theme);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0;
+}
+
+#page-title .title-content {
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 56px;
+}
+
+#page-title input[name="search-movie"] {
+  width: 514px;
+  height: 56px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  padding: 16px;
+  background: transparent;
+  display: block;
+}
+
+#page-title .search-placeholder {
+  width: 24px;
+  height: auto;
+  position: relative;
+  left: 16px;
+  bottom: 46px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+#page-title .search-icon {
+  width: 24px;
+  height: auto;
+  position: relative;
+  left: 274px;
+  bottom: 38px;
+}
+
+section {
+  max-width: var(--lg-container);
+  margin: 45px auto;
+  padding: 0 15px;
+}
+
+h3 {
+  font-family: 'Ubuntu';
+  font-size: 22px;  ;
+  line-height: 30px;
+  background: #666666;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin:0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 31px;
+}
+#card-movies .title,
+#characters .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#card-movies .title > img,
+#characters .title > img {
+  width: 22px;
+  margin-right: 5px;
+}
+
+#card-movies .card {
+  width: 311px;
+  height: 401px;
+  border-radius: 3px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+#card-movies .card-image {
+  height: 169px;
+  background: var(--background-card-movie);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card-movies .card-separator {
+  height: 6px;
+  background: var(--separator-card-movie);
+}
+
+#card-movies .card-info {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-family: 'Ubuntu';
+  font-size: 26px;  ;
+  line-height: 30px;
+  color: #009CDA;
+  font-weight: 400;
+  margin:0;
+}
+
+#card-movies .card-info p {
+  color: #777777;
+  font-weight: 400;
+  line-height: 17px;
+  font-size: 12px;
+  flex-grow: 2;
+}
+
+
+#card-movies .card-footer > div {
+  margin-bottom: 4px;
+}
+
+#card-movies .card-footer div {
+  display: flex;
+  align-items: center;
+}
+
+#card-movies .card-footer img {
+  margin-right: 11px;
+}
+
+#card-movies .card-footer span {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #777777;
+}
+
+.cards-characters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+.character {
+  width: 226px;
+  height: 204px;
+  background: #F5F5F5;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding:16px 0 7px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.character-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-footer > img {
+  width: 10px;
+  height: 14px;
+  margin-bottom: 3px;
+}
+.city {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #666666;
+}
