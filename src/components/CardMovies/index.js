@@ -9,7 +9,8 @@ import { PrevArrow, NextArrow } from "../../shared/Arrows";
 import { getMovies } from '../../service/movies';
 import { 
     Div, Card, CardImage, CardSeparator, CardInfo, CardFooter,
-    DivLoading, CardLoading, CardImageLoading, CardSeparatorLoading, CardInfoLoading, CardFooterLoading
+    DivLoading, CardLoading, CardImageLoading, CardSeparatorLoading, CardInfoLoading, CardFooterLoading,
+    OpeningCrawl
 } from "./style";
 
 import fileIcon from "../../assets/file-image.svg";
@@ -28,10 +29,9 @@ function CardMovies({q}) {
         slidesToShow: 3,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
-        adaptiveHeight: false,
-        
+        adaptiveHeight: true,
     };
-    console.log("qqq", q)
+
     useEffect(() => {
         getMovies(q, ({results}) => {
             setLoadingContent(false);
@@ -56,10 +56,9 @@ function CardMovies({q}) {
                             <span>
                                 {title}
                             </span>
-                            <p>
-                            Luke Skywalker has returned to his home p
-                            lanet of Tatooine in an attempt to rescue hhat the GALACTIC EMPIRE has secretly begun construction on a new armored space station even
-                            </p>
+                            <OpeningCrawl>
+                                {opening_crawl}
+                            </OpeningCrawl>
                             <CardFooter>
                                 <div>
                                     <img src={chairDirectorIcon} alt="Director" />

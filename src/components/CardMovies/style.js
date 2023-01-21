@@ -11,23 +11,15 @@ const contentLoading = keyframes`
 `;
 
 export const Div = styled.div`
-    // display: grid;
-    // grid-template-columns: 1fr 1fr 1fr;
-    // grid-gap: 31px;
-
     // .slick-active {
     //     margin-right: 10px;
-    // }
-
-    // .slick-list {
-    //     height: 405px;
     // }
 `;
 
 export const Card = styled.div`
-    width: 311px;
+    margin: 0 20px;
     height: 401px;
-    border-radius: 3px;
+    border-radius: 8px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
@@ -109,7 +101,7 @@ export const DivLoading = styled.div`
 `
 
 export const CardLoading = styled.div`
-    width: 311px;
+    width: 360px;
     height: 401px;
     border-radius: 3px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
@@ -168,3 +160,7 @@ export const CardFooterLoading = styled.div`
     animation: ${contentLoading} 1s linear infinite alternate;
 `
 
+export const OpeningCrawl = styled.p`
+    overflow-y: auto;
+    height: 80px;
+`

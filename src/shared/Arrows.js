@@ -10,7 +10,7 @@ const Button = styled.button`
     border-radius: 50%;
     border: none;
     position: absolute;
-    top: 138px;
+    top: 50%;
     cursor: pointer;
     z-index: 20;
     

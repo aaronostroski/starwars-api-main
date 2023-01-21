@@ -28,7 +28,7 @@ function CardCharacters({episode_id, charactersData = [], q}) {
         slidesToShow: 4,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
-        rows: 1,
+        adaptiveHeight: true,
         beforeChange: (current, next) => setNavigation(prevNavigation => ({...prevNavigation, page: prevNavigation.page + 1}) ),
     };
 
