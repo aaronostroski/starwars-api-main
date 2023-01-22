@@ -9,72 +9,64 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
-`
-
-export const Div = styled.div`
-    display: flex;
     flex-direction: column;
-    align-items: center;
-
-    h1 {
-        font-family: var(--h1-font-title);
-        font-size: var(--h1-size-title);
-        line-height: var(--h1-line-height-title);
-        background: ${props => props.titleColor};
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-top: 0;
-    }
 `
 
-export const InputSearch = styled.div`
-    transition: all .2s ease;
-
-    input {
-        width: 514px;
-        height: 56px;
-        border-radius: 4px;
-        border: 1px solid var(--default-color-input);
-        padding: 16px;
-        background: transparent;
-        display: block;
-        color: #ffffff;
-
-        &:focus ~ label {
-            font-size:14px;
-            top: -74px;]
-            transition: all .2s ease;
-
-        }
-
-        &:valid ~ label {
-            transition: all .2s ease;
-
-            top: -74px;
-        }
-    } 
-
-    .search-placeholder {
-        width: 24px;
-        position: relative;
-        left: 16px;
-        bottom: 46px;
-        color: var(--default-color-placeholder);
-        font-size: 16px;
-        line-height: 16px;
-        z-index: 10;
-        transition: all .2s ease;
-    }
-
-    .search-icon {
-        width: 24px;
-        height: auto;
-        position: relative;
-        left: 274px;
-        bottom: 38px;
-        cursor: pointer;
-        transition: all .2s ease;
-
-    }
+export const Title = styled.h1`
+    font-family: var(--h1-font-title);
+    font-size: var(--h1-size-title);
+    line-height: var(--h1-line-height-title);
+    background: ${props => props.titleColor};
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0;
 `
+
+export const LabelSearch = styled.label`
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+    color: red;
+`;
+
+export const SearchIcon = styled.img`
+    position: absolute;
+    top: 20px;
+    left: 32px;
+`;
+
+export const InputSearch = styled.input`
+    border-radius: 6px;
+    height: 69px;
+    padding: 0 20px 0px 80px;
+    font-size: 100%;
+    max-width: 800px;
+    width: 100%;
+`;
+
+export const ButtonSearch = styled.button`
+    position: absolute;
+    top: 11px;
+    right: 32px;
+    border: none;
+    border-radius: 6px;
+    width: 96px;
+    height: 46px;
+    cursor: pointer;
+    background-image: linear-gradient(64.17deg, #FF5A56 15.66%, #FF9A42 83.04%);
+    background-size: 300% 100%;
+    color: var(--background-theme);
+    text-transform: uppercase;
+    font-size: 12.8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .s ease-in-out;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background-position: 50% 0;
+    }
+`;

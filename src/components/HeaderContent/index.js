@@ -1,11 +1,13 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { Header, Div, InputSearch } from "./style";
+import { Header, Title, InputSearch, LabelSearch, SearchIcon, ButtonSearch } from "./style";
 
 import searchIcon from "../../assets/search-icon.svg";
 
-function HeaderContent({title, titleColor = "var(--default-color-title)", banner, enableSearchField = false, q = ""}) {
+import bg1 from "../../assets/bg-search-1.jpg";
+
+function HeaderContent({title, titleColor = "var(--default-color-title)", enableSearchField = false, q = ""}) {
     const searchRef = useRef();
     const navigate = useNavigate();
 
@@ -17,20 +19,17 @@ function HeaderContent({title, titleColor = "var(--default-color-title)", banner
             navigate({ pathname: "/search", search: `q=${q}`, state: { ts } })
         }
     }
+
     return (
-        <Header banner={banner}>
-            <Div titleColor={titleColor}>
-                <h1>
-                    {title}
-                </h1>
-                {enableSearchField && 
-                    <InputSearch>
-                        <input ref={searchRef} type="text" name="search-movie" id="search-movie" required onKeyUp={searchResults} defaultValue={q} />
-                        <label htmlFor="search-movie" className="search-placeholder">Search movies or characters</label>
-                        <img className="search-icon" src={searchIcon} alt="Search" onClick={ev => searchResults(ev)} role="button"></img>
-                    </InputSearch>
-                }
-            </Div>
+        <Header banner={bg1}>
+            <Title titleColor={titleColor}>
+                {title}
+            </Title>
+            <LabelSearch htmlFor="q">
+                <SearchIcon src={searchIcon} alt="Buscar" />
+                <InputSearch placeholder="Busca por filmes, personagens, autores ..." ref={searchRef} required onKeyUp={searchResults} defaultValue={q} />
+                <ButtonSearch type="submit">Buscar</ButtonSearch>
+            </LabelSearch>
         </Header>
     )
 }
